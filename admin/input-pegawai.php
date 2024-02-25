@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>RISTORIA COFFEE</title>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<style type="text/css">
 
          /*membuat background warna*/
@@ -49,10 +49,10 @@
             <li>
 				  <a href="home.php"><span class="glyphicon glyphicon-home"></span> Home </a>
 			  </li>
-			  <li class="active">
+			  <li>
 				  <a href="tampil-pesanan.php"><span class="glyphicon glyphicon-book"></span> Data pesanan <span class="sr-only">(current)</span></a>
 			  </li>
-			  <li>
+			  <li class="active">
 				  <a href="D-pegawai.php"><span class="glyphicon glyphicon-book"></span> Data pegawai </a>
 			  </li>
 			  <li>
@@ -69,7 +69,10 @@
 		  </div>
 		</div>
 	  </nav><!-- Akhir script Navbar -->
-
+    
+    <br>
+    <br>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-md-12">

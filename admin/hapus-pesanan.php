@@ -14,7 +14,7 @@ $hapus=$koneksi->query("delete from pesanan where id_costumer='$id'");
 
 if($hapus==true){
 
-    header("location:admin/tampil-pesanan.php?pesan=hapusBerhasil");
+    header("location:tampil-pesanan.php?pesan=hapusBerhasil");
 
 } else{
     echo "Error";

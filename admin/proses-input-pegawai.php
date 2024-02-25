@@ -12,7 +12,7 @@ $simpan=$koneksi->query("insert into pegawai(id_pegawai,nama,alamat,no_hp)
 
 if($simpan==true){
 
-    header("location:admin/tampil-pegawai.php?pesan=inputBerhasil");
+    header("location:tampil-pegawai.php?pesan=inputBerhasil");
 } else{
     echo "Error";
 }

@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>RISTORIA COFFEE</title>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<style type="text/css">
 
          /*membuat background warna*/
@@ -111,13 +111,13 @@
 
             <tr>
                 <td>
-                  <b><?php echo $row['id']?></b> (<?php echo $row['nama']?>) <br>
-                 "<i><?php echo $row['pesan']?></i>"
-               </td>
+                    <b><?php echo $row['id']?></b> (<?php echo $row['nama']?>) <br>
+                    "<i><?php echo $row['pesan']?></i>"
+                </td>
                 <td>
-                <a href="hapus-saran.php?id=<?php echo $row['id']?>" onclick=" return confirm('Anda yakin menghapus data?')">
+                    <a href="hapus-saran.php?id=<?php echo $row['id']?>" onclick=" return confirm('Anda yakin menghapus data?')">
                     <button class="btn btn-xs btn-warning glyphicon glyphicon-remove"></button>
-                </a>
+                    </a>
                 </td>
             </tr>
 

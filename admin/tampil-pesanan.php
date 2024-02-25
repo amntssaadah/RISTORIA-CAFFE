@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>RISTORIA COFFEE</title>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<style type="text/css">
 
          /*membuat background warna*/
@@ -134,7 +134,7 @@
         <?php
 
         include "../koneksi.php";
-        $sql=$koneksi->query("select * from pesanan order by id_costumer ASC");
+        $sql=$koneksi->query("select * from pesanan");
 
         while($row= $sql->fetch_assoc()){
         ?>
@@ -149,15 +149,12 @@
                 <td><?php echo $row['jenis_minuman']?></td>
                 <td><?php echo $row['harga_minuman']?></td>
                 <td>
-
-                <a href="edit-pesanan.php?id=<?php echo $row['id_costumer']?>">
-                    <button class="btn btn-xs btn-danger glyphicon glyphicon-edit"></button>
-                </a>
-
-                <a href="hapus-pesanan.php?id=<?php echo $row['id_costumer']?>" onclick=" return confirm('Anda yakin menghapus data?')">
-                    <button class="btn btn-xs btn-warning glyphicon glyphicon-remove"></button>
-                </a>
-
+                    <a href="edit-pesanan.php?id=<?php echo $row['id_costumer']?>">
+                        <button class="btn btn-xs btn-danger glyphicon glyphicon-edit"></button>
+                    </a>
+                    <a href="hapus-pesanan.php?id=<?php echo $row['id_costumer']?>" onclick=" return confirm('Anda yakin menghapus data?')">
+                        <button class="btn btn-xs btn-warning glyphicon glyphicon-remove"></button>
+                    </a>
                 </td>
             </tr>
 

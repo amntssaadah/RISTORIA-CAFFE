@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>RISTORIA COFFEE</title>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<style type="text/css">
 
          /*membuat background warna*/
@@ -69,7 +69,9 @@
 		  </div>
 		</div>
 	  </nav><!-- Akhir script Navbar -->
-
+    <br>
+    <br>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-md-12">

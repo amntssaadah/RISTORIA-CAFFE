@@ -12,7 +12,7 @@ $ubah=$koneksi->query("update pegawai set id_pegawai='$id_pegawai', nama='$nama'
 
 if($ubah==true){
 
-    header("location:admin/tampil-pegawai.php?pesan=editBerhasil");
+    header("location:tampil-pegawai.php?pesan=editBerhasil");
 } else{
     echo "Error";
 }

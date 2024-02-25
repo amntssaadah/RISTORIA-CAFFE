@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>RISTORIA COFFEE</title>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<style type="text/css">
 
          /*membuat background warna*/
@@ -49,10 +49,10 @@
             <li>
 				  <a href="home.php"><span class="glyphicon glyphicon-home"></span> Home </a>
 			  </li>
-			  <li class="active">
+			  <li>
 				  <a href="tampil-pesanan.php"><span class="glyphicon glyphicon-book"></span> Data pesanan <span class="sr-only">(current)</span></a>
 			  </li>
-			  <li>
+			  <li class="active">
 				  <a href="D-pegawai.php"><span class="glyphicon glyphicon-book"></span> Data pegawai </a>
 			  </li>
 			  <li>
@@ -80,10 +80,15 @@
                 $tampil=$koneksi->query("select * from pegawai where  id_pegawai='$id'");
                 $row=$tampil->fetch_assoc();
                 ?>
+                    
+                    <br>
+                    <br>
+                    <br>
+
                     <div class="form-group">
                         <label for="id_pegawai">Id pegawai</label>
-                        <input type="hidden" name="id_costumer" value="<?php echo $row['id_costumer']?>" class="form-control">
-                        <input type="number" name="id_costumer" value="<?php echo $row['id_costumer']?>" class="form-control">
+                        <input type="hidden" name="id_pegawai" value="<?php echo $row['id_pegawai']?>" class="form-control">
+                        <input type="number" name="id_pegawai" value="<?php echo $row['id_pegawai']?>" class="form-control">
                     </div>
 
                     <div class="form-group">
